@@ -1,0 +1,418 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(./font/Poppins-ExtraBold.ttf);
+    src: url(./font/Poppins-Regular.ttf);
+    src: url(./font/Poppins-SemiBold.ttf);
+}
+
+/* Base Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* At 100% = 1rem = 16px At 62.5%=0.625rem=10px*/
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: whitesmoke;
+}
+
+h1, h2, p {
+    margin: 1.6rem 0;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 2.4rem;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Utility Class */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+
+section {
+    padding: 100px 0;
+}
+
+/* Hero Section */
+
+header {
+    height: 130vh;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6)), url(./image/hero_section.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+}
+
+.logo h1 {
+    font-size: 3.2rem;
+    color: #4caf50;
+    margin: 0;
+    /* border: 1px solid green; */
+}
+
+nav {
+    padding: 2% 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 1.2rem;
+}
+
+nav ul li :hover {
+    color: #4caf50;
+    transition: 0.5s ease-in-out;
+}
+
+.mobile-menu {
+    width: 45px;
+    height: 40px;
+    display: none;
+}
+/* ==================================== */
+/* Will need to revisit this styling */
+.header-content {
+    width: 50%;
+    position: relative;
+    top: 16%;
+    left: 8%;
+ }
+/* ==================================== */
+form {
+    margin: 2.4rem 0;
+}
+
+input {
+    font-size: 1.8rem;
+}
+
+input[type=text], input[type=email] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 1.2rem 0;
+    display: block;
+    border: 1px solid #ccc;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+input::placeholder {
+    font-size: 1.6rem;
+    color: #ccc;
+}
+
+/* About Section */
+
+.about-left, .about-middle, .about-right {
+    flex-basis: 30%;
+    padding: 1.6rem;
+}
+
+.btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 8px 16px;
+    display: inline-block;
+    margin: 2rem 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.about2 {
+    background-color: #222;
+    color: whitesmoke;
+}
+
+.about2-left {
+    flex-basis: 50%;
+}
+
+.about2-right {
+    flex-basis: 30%;
+}
+
+.about2 .card {
+    padding: 3rem 8rem;
+    color: #222;
+    background-color: #DCDCDC;
+    margin: 1.6rem;
+    text-align: center;
+}
+
+
+.about2-right img {
+    width: 24px;
+    height: auto;
+}
+
+.slay {
+    border: 1px solid red;
+}
+
+/* Process Section */
+.process .row {
+    justify-content: center;
+}
+
+.process-content {
+    margin-top: 100px;
+}
+
+.progress-bar {
+    width: 80%;
+    height: 2px;
+    background-color: #222;
+    margin: auto;
+    position: relative;
+}
+
+.progress-bar .c1, .progress-bar .c2, .progress-bar .c3 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #222;
+    position: absolute;
+}
+
+.progress-bar .c1 {
+    top: -8px;
+    left: 50px;
+}
+
+.progress-bar .c2 {
+    top: -8px;
+    left: 50%;
+}
+
+.progress-bar .c3 {
+    top: -8px;
+    right: 50px;
+}
+
+.box1, .box2,.box3 {
+    padding: 1.8rem;
+}
+
+.process .box2 {
+    text-align: center;
+}
+
+.process .box3 {
+    text-align: right;
+}
+
+.process-content h2 {
+    color: #4caf50;
+}
+
+/* Testimony */
+.testimony {
+    background-color: #222;
+    color: whitesmoke;
+}
+
+.testimony .test {
+    background-color: #505050;
+    padding: 4rem 8rem;
+    margin: 0 1rem;
+}
+
+.testimony .image {
+    height: 8rem;
+    width: 8rem;
+}
+
+.testimony .image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.icons img {
+    width: 2rem;
+}
+
+/* Contact */
+
+.contact .row {
+    justify-content: center;
+}
+
+.contact form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form input {
+    width: 50%;
+}
+
+.contact textarea {
+    width: 50%;
+    height: 15rem;
+    padding: 1.2rem 2rem;
+    border: 0.1rem solid #ccc;
+    font-size: 1.3rem;
+    resize: none;
+    color: #ccc;
+    margin: 1.2rem 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Footer */
+
+footer img {
+    width: 1.6rem;
+}
+
+footer {
+    height: 8rem;
+    background-color: #222;
+    color: #fff;
+    line-height: 8rem;
+    text-align: center;
+}
+
+
+/* Media Queries */
+
+/* When using media only screen and, there should be a space between and & the () 
+that contains the max-width. max-width means anything below the set width in px */
+
+@media only screen and (max-width: 768px) {
+
+    .row {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: column;
+        background-color: whitesmoke;
+        display: none;
+    }
+
+    nav ul li a {
+        color: grey;
+    }
+
+    nav ul li a:hover {
+        color: #4caf50;
+        transition: 0.5s ease-in-out;
+        text-decoration: underline;
+    }
+
+    .show-drop-menu {
+        display: flex;
+    }
+
+    /* Header Content */
+    .header-content {
+        width: 100%;
+        top: 16%;
+        left: 0;
+        padding: 0 8%;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=submit] {
+        width: 80%;
+        /* margin: 2rem auto; */
+    }  
+
+    .progress-bar {
+        display: none;
+    }
+
+    /* Process */
+    .process-content {
+        margin-top: 2rem;
+    }
+
+    .process .box1, 
+    .process .box2,
+    .process .box3 {
+        text-align: center;
+    }
+
+    /* Testimony */
+    .testimony .test {
+        margin: 1.6rem 0;
+    }
+
+    .contact form input, 
+    .contact textarea {
+        width: 100%;
+        
+    }
+}
